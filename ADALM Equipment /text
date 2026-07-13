@@ -1,4 +1,4 @@
-## Integration of Advanced Instrumentation: Characterizing Analog MEMS Utilizing the ADALM Active Learning Module
+ Integration of Advanced Instrumentation: Characterizing Analog MEMS Utilizing the ADALM Active Learning Module
 
 The modern landscape of electrical engineering education and rapid prototyping has been profoundly transformed by the introduction of highly integrated, portable instrumentation. 
 In the context of an Analog Integrated Circuits (IC) laboratory, traditional benchtop equipment—consisting of bulky, standalone oscilloscopes, function generators, and power supplies—is increasingly being supplemented or 
@@ -17,14 +17,14 @@ test points. It incorporates critical local signal conditioning, such as bypass 
 trace lines to prevent signal degradation.
 
 To bridge the physical layout of the custom PCB with the underlying silicon architecture, engineering teams rely heavily on the device's pin configuration datasheet.
-The datasheet acts as the definitive schematic blueprint for the evaluation process. It maps out the exact functional assignments of the micro-scale pads: the power supply pins ($V_{DD}$ and $V_{DD\_IO}$),
-the analog output channels corresponding to specific physical axes (such as $X$, $Y$, and $Z$ voltage outputs), and the reference ground plane ($GND$). Furthermore, the datasheet stipulates the precise
-absolute maximum ratings—such as the maximum operating voltage, typically constrained between $1.8\text{V}$ and $3.6\text{V}$ for low-power analog MEMS—alongside expected sensitivity metrics expressed 
-in millivolts per unit of physical stimulus ($\text{mV}/g$). Aligning the test environment with these datasheet specifications is imperative to avoid electrical overstress that could permanently fuse
+The datasheet acts as the definitive schematic blueprint for the evaluation process. It maps out the exact functional assignments of the micro-scale pads: the power supply pins 
+the analog output channels corresponding to specific physical axes , and the reference ground plane (GND). Furthermore, the datasheet stipulates the precise
+absolute maximum ratings—such as the maximum operating voltage, typically constrained between  for low-power analog MEMS—alongside expected sensitivity metrics expressed 
+in millivolts per unit of physical stimulus . Aligning the test environment with these datasheet specifications is imperative to avoid electrical overstress that could permanently fuse
 the delicate internal micro-springs or capacitive plates of the sensor.
 
 Once the custom PCB is populated and verified, it is coupled with the ADALM kit to initiate the hardware-in-the-loop testing sequence. The integrated arbitrary signal generator of the ADALM module is 
-deployed to simulate physical dynamics or provide reference clocks if required by the device architecture. Concurrently, the module's stable programmable DC power outputs provide the exact $V_{DD}$ voltage 
+deployed to simulate physical dynamics or provide reference clocks if required by the device architecture. Concurrently, the module's stable programmable DC power outputs provide the exact V_DD voltage 
 required by the custom PCB, eliminating the risk of voltage spikes. As the MEMS sensor experiences external stimulus—either via controlled mechanical excitation or specialized acoustic inputs—the internal
 micro-machined structures deflect, altering the internal capacitance and generating a minute analog output voltage.
 
