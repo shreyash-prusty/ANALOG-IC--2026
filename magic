@@ -1,3 +1,0 @@
-The physical layout of the differential amplifier's lower matching stage was 
-implemented using the open-source Magic VLSI layout engine and the SkyWater 130nm (sky130) process node.
-The layout directly translates the schematic netlist into a manufacturable, DRC-clean physical architecture.
