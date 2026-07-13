@@ -1,1 +1,16 @@
+These images capture the custom physical layout design of the lower differential pair (or current mirror matching block) of a differential amplifier,
+designed using the Magic VLSI Layout Tool on the SkyWater 130nm (sky130A) open-source PDK process node.
 
+Here is a short, technical markdown snippet ready for your GitHub repository update:
+
+🎨 Physical Layout Design & Verification
+The physical layout of the differential amplifier's lower matching stage was implemented 
+using the open-source Magic VLSI layout engine and the SkyWater 130nm (sky130) process node. 
+The layout directly translates the schematic netlist into a manufacturable, DRC-clean physical architecture.
+
+📐 Layout Topology & Device Sizing
+Target Core: Differential pair / Current mirror active load (M5 and M6 transistors).
+
+Matching Interleaving Strategy: A split-finger layout topology arranged in an abccba / M6-M6-M5-M5-M5-M5-M6-M6 configuration.
+
+Purpose: Implementing this interdigitated configuration drastically reduces mismatch caused by cross-chip thermal gradients and linear process variations, ensuring tight parameter symmetry between the balanced nodes.
